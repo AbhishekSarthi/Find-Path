@@ -8,7 +8,7 @@ import { GridContext } from './GridContext';
 //     [0, 3, 3, 3, 0],
 //     [0, 3, 0, 1, 0],
 // ];
-let tempo = -5;
+let tempo = 0;
 const Grid = () => {
     // const [block, setBlock] = useState(9);
     const [grid, setGrid] = useContext(GridContext);
@@ -84,7 +84,7 @@ const Grid = () => {
     //     if (tempo === 4) setTempo(0);
     // }, [tempo]);
     useEffect(() => {
-        tempo = -5;
+        tempo = 0;
         console.log(grid, tempo);
     }, [grid]);
 
