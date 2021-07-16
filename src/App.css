@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    background-color: bisque;
+}
+.grid {
+    background-color: chocolate;
+    padding: 15px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin: 2px;
+}
