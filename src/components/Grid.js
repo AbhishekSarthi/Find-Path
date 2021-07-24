@@ -90,15 +90,15 @@ const Grid = () => {
 
     return (
         <>
-            <div>HELLOOO</div>
-
-            {grid.map((detail) => {
-                return (
-                    <div className="row" key={10000 * Math.random()}>
-                        <Table detail={detail} row={tempo++} col={0} />
-                    </div>
-                );
-            })}
+            <div className="box">
+                {grid.map((detail) => {
+                    return (
+                        <div className="" key={10000 * Math.random()}>
+                            <Table detail={detail} row={tempo++} col={0} />
+                        </div>
+                    );
+                })}
+            </div>
             {/* <div className="row">
                 <div className="grid" onClick={(e) => getRowCol(e, 0, 0)}></div>
                 <div className="grid" onClick={(e) => getRowCol(e, 0, 1)}></div>
@@ -138,10 +138,12 @@ const Grid = () => {
 
             */}
             <div>
-                {/* <button onClick={() => setBlock(7)}>7</button>
-                <button onClick={() => setBlock(8)}>8</button>
-                <button onClick={() => setBlock(9)}>9</button> */}
-                <button onClick={() => is_Possible(grid)}>Find Path</button>
+                <button
+                    className="btn btn-primary"
+                    onClick={() => is_Possible(grid)}
+                >
+                    Find Path
+                </button>
             </div>
         </>
     );

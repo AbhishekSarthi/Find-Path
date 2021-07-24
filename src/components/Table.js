@@ -53,13 +53,22 @@ const Table = ({ detail, row, col }) => {
 
                     return (
                         <div
-                            className="grid"
+                            className={
+                                'abcd btn ' +
+                                (d === 0
+                                    ? 'btn0'
+                                    : d === 3
+                                    ? 'btn3'
+                                    : d === 1
+                                    ? 'btn1'
+                                    : 'btn2')
+                            }
                             data-row={row}
                             data-col={col++}
                             key={10000 * Math.random()}
                             onClick={(e) => getRowCol(e)}
                         >
-                            {d}
+                            <h3>{d}</h3>
                         </div>
                     );
                 })
@@ -68,12 +77,6 @@ const Table = ({ detail, row, col }) => {
             <button onClick={() => setBlock(1)}>1</button>
             <button onClick={() => setBlock(2)}>2</button>
             <button onClick={() => setBlock(3)}>3</button>
-            {/* <button onClick={() => setBlock(3)}>3</button> */}
-            {/* <div className="grid" onClick={(e) => getRowCol(e, 0, 0)}></div>
-            <div className="grid" onClick={(e) => getRowCol(e, 0, 1)}></div>
-            <div className="grid" onClick={(e) => getRowCol(e, 0, 2)}></div>
-            <div className="grid" onClick={(e) => getRowCol(e, 0, 3)}></div>
-            <div className="grid" onClick={(e) => getRowCol(e, 0, 4)}></div> */}
         </>
     );
 };

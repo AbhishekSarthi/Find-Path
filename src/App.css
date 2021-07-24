@@ -1,12 +1,64 @@
-.row {
-    display: flex;
-    background-color: bisque;
+.box {
+    margin-top: 5%;
+    margin-left: 26%;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
-.grid {
-    background-color: chocolate;
-    padding: 15px;
-    height: 15px;
-    width: 15px;
+.jumbotron {
+    position: absolute;
+    width: 80%;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    background-color: rgb(49, 49, 49);
+}
+h3 {
+    visibility: hidden;
+}
+.abcd {
+    /* padding: 15px;
+    margin: 2px; */
+    /* float: left; */
+    /* border: 1px solid black; */
+    /* text-align: le; */
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+
     cursor: pointer;
-    margin: 2px;
+}
+.btn3 {
+    background-image: url('https://cdn.theatlantic.com/thumbor/qOP_fwtgivaPVGatcrdYku4UR0w=/297x0:2484x2187/1080x1080/media/img/mt/2015/10/Cygnus_v3_BandW/original.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px; /* You must set a specified height */
+    background-position: center;
+}
+.btn1 {
+    /* background-image: url('https://i.imgur.com/RlYmJCf.png'); */
+    background-image: url('https://s.yimg.com/uu/api/res/1.2/gj3f41_foiujxtKRfC4R.A--~B/aD00MDA7dz02MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/Benzinga/654919a2294926693f874d9c686c6836');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px; /* You must set a specified height */
+    background-position: center;
+}
+
+.btn2 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px; /* You must set a specified height */
+    background-position: center;
+}
+
+.btn0 {
+    background-image: url('https://cdn.images.express.co.uk/img/dynamic/151/750x445/1261315.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px; /* You must set a specified height */
+    background-position: center;
 }
